@@ -2,6 +2,14 @@
 
 All notable changes to Ombra will be documented in this file.
 
+## v1.1.0 - 2026-07-16
+
+This release includes:
+
+- Updated Astro from `^7.0.0` to `^7.1.0`.
+- Improved the concept section body copy on smaller screens with a wider readable measure and tighter mobile typography.
+- Expanded the first concept figure on smaller screens.
+
 ## v1.0.0 - 2026-06-22
 
 Initial release of Ombra, a dark editorial Astro theme for restaurants, tasting counters, supper clubs, private chefs, wine bars, and boutique hospitality concepts.

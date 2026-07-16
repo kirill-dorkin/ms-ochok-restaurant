@@ -425,6 +425,7 @@ a:hover {
 
 .figure-detail {
   grid-column: 9 / span 4;
+  margin: 0;
 }
 
 .concept-section .text-block {
@@ -861,6 +862,21 @@ textarea {
     max-width: 34rem;
   }
 
+  .concept-section .text-block {
+    grid-column: 1 / -1;
+    max-width: 34rem;
+    font-size: 1rem;
+    line-height: 1.68;
+  }
+
+  .concept-section .text-block p + p {
+    margin-top: 1rem;
+  }
+
+  .concept-section .figure-detail {
+    margin-top: 0;
+  }
+
   .course h3,
   .course p,
   .pairing {
@@ -897,6 +913,12 @@ textarea {
 @media (max-width: 640px) {
   .hero {
     min-height: 720px;
+  }
+
+  .concept-section .text-block {
+    max-width: none;
+    font-size: 0.98rem;
+    line-height: 1.62;
   }
 
   .form-grid,
