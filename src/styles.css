@@ -3,6 +3,11 @@
 @import "@fontsource/cormorant-garamond/latin-600.css";
 @import "@fontsource/source-sans-3/latin-400.css";
 @import "@fontsource/source-sans-3/latin-600.css";
+@import "@fontsource/cormorant-garamond/cyrillic-400.css";
+@import "@fontsource/cormorant-garamond/cyrillic-400-italic.css";
+@import "@fontsource/cormorant-garamond/cyrillic-600.css";
+@import "@fontsource/source-sans-3/cyrillic-400.css";
+@import "@fontsource/source-sans-3/cyrillic-600.css";
 
 :root {
   --font-display: "Cormorant Garamond", Georgia, "Times New Roman", serif;

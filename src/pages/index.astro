@@ -52,7 +52,7 @@ const structuredData = {
       <Image
         class="media-fill"
         src={heroImage}
-        alt="Chef hands finishing a small ceramic plate beside a live wood fire"
+        alt="Руки шефа заканчивают подачу у живого огня"
         width={1024}
         height={1536}
         quality={92}
@@ -83,7 +83,7 @@ const structuredData = {
 
     </section>
 
-    <section class="marquee" aria-label="Ombra values">
+    <section class="marquee" aria-label="Ценности кухни">
       <div class="marquee-track">
         {[...homeContent.marquee, ...homeContent.marquee].map((item) => (
           <span>
@@ -101,7 +101,7 @@ const structuredData = {
         </div>
         <h2 class="section-heading display reveal">
           {homeContent.concept.heading[0]}<br />
-          <span class="display-italic" style="color: var(--ember);">by heat,</span> by hands,<br />
+          <span class="display-italic" style="color: var(--ember);">на жаре,</span> на руках,<br />
           {homeContent.concept.heading[2]}
         </h2>
 
@@ -113,7 +113,7 @@ const structuredData = {
           <div class="image-frame aspect-3-4">
             <Image
               src={detailImage}
-              alt="Handmade ceramic bowl with a small seasonal tasting course"
+              alt="Керамическая пиала с сезонной подачей"
               width={1200}
               height={1500}
               loading="lazy"
@@ -126,7 +126,7 @@ const structuredData = {
           <div class="fire-media image-frame aspect-16-10">
             <Image
               src={conceptImage}
-              alt="Glowing embers and flame in a working restaurant hearth"
+              alt="Угли и пламя в очаге ресторана"
               width={1400}
               height={875}
               loading="lazy"
@@ -155,7 +155,7 @@ const structuredData = {
           <div class="image-frame aspect-3-4">
             <Image
               src={menuImage}
-              alt="Seasonal ingredients laid out before service on a dark stone prep counter"
+              alt="Сезонные продукты на тёмной каменной столешнице перед ужином"
               width={1200}
               height={1500}
               loading="lazy"
@@ -194,7 +194,7 @@ const structuredData = {
         <div class="chef-media image-frame aspect-4-5 reveal">
           <Image
             src={chefImage}
-            alt="Black and white candid portrait of Chef Elia Marchetti in profile"
+            alt="Чёрно-белый портрет шефа в профиль"
             width={1200}
             height={1500}
             loading="lazy"
@@ -222,7 +222,7 @@ const structuredData = {
       <div class="interior-hero">
         <Image
           src={interiorImage}
-          alt="Twelve-seat tasting counter with terracotta plaster walls, oak beams, candles, and an open hearth"
+          alt="Стойка на двенадцать мест: терракотовые стены, дубовые балки, свечи и открытый очаг"
           width={1800}
           height={1200}
           loading="lazy"
@@ -272,11 +272,11 @@ const structuredData = {
           <p class="reveal reveal-delay-1">{homeContent.reservation.body}</p>
           <div class="reservation-facts reveal reveal-delay-2">
             <div>
-              <p class="label-eyebrow">Service</p>
+              <p class="label-eyebrow">Ужины</p>
               <p>{siteConfig.hours.serviceDays}<br />{siteConfig.hours.seatings}</p>
             </div>
             <div>
-              <p class="label-eyebrow">Quiet days</p>
+              <p class="label-eyebrow">Выходные</p>
               <p>{siteConfig.hours.closed}</p>
             </div>
           </div>
@@ -286,7 +286,7 @@ const structuredData = {
           <p class="label-eyebrow">{homeContent.reservation.formTitle}</p>
           <div class="form-grid">
             <div class="form-field--full">
-              <label class="label-eyebrow" for="name">Full name <span aria-hidden="true">*</span></label>
+              <label class="label-eyebrow" for="name">Имя и фамилия <span aria-hidden="true">*</span></label>
               <input id="name" name="name" autocomplete="name" required />
             </div>
             <div>
@@ -294,39 +294,39 @@ const structuredData = {
               <input id="email" name="email" type="email" autocomplete="email" required />
             </div>
             <div>
-              <label class="label-eyebrow" for="phone">Phone</label>
+              <label class="label-eyebrow" for="phone">Телефон</label>
               <input id="phone" name="phone" type="tel" autocomplete="tel" />
             </div>
             <div>
-              <label class="label-eyebrow" for="date">Date <span aria-hidden="true">*</span></label>
+              <label class="label-eyebrow" for="date">Дата <span aria-hidden="true">*</span></label>
               <input id="date" name="date" type="date" required />
             </div>
             <div>
-              <label class="label-eyebrow" for="guests">Guests</label>
+              <label class="label-eyebrow" for="guests">Гостей</label>
               <select id="guests" name="guests">
                 {["2", "3", "4", "5", "6"].map((option) => <option value={option}>{option}</option>)}
               </select>
             </div>
             <div class="form-field--full">
-              <label class="label-eyebrow" for="time">Seating</label>
+              <label class="label-eyebrow" for="time">Посадка</label>
               <select id="time" name="time">
                 {["19:30", "21:45"].map((option) => <option value={option}>{option}</option>)}
               </select>
             </div>
             <div class="form-field--full">
-              <label class="label-eyebrow" for="occasion">Special occasion</label>
+              <label class="label-eyebrow" for="occasion">Повод</label>
               <select id="occasion" name="occasion">
-                {["None", "Anniversary", "Birthday", "Engagement", "Just because"].map((option) => (
+                {["Без повода", "Годовщина", "День рождения", "Помолвка", "Просто так"].map((option) => (
                   <option value={option}>{option}</option>
                 ))}
               </select>
             </div>
             <div class="form-field--full">
-              <label class="label-eyebrow" for="note">A note for the kitchen</label>
-              <textarea id="note" name="note" rows="3" placeholder="Allergies, dietary needs, anything we should know."></textarea>
+              <label class="label-eyebrow" for="note">Комментарий для кухни</label>
+              <textarea id="note" name="note" rows="3" placeholder="Аллергии, ограничения в еде, всё, что нам стоит знать."></textarea>
             </div>
           </div>
-          <button class="form-button" type="submit">Request seat <span aria-hidden="true">-&gt;</span></button>
+          <button class="form-button" type="submit">Отправить демо-запрос <span aria-hidden="true">-&gt;</span></button>
           <p style="color: var(--muted-foreground); font-size: 0.85rem;">{homeContent.reservation.confirmation}</p>
         </form>
       </div>

@@ -13,22 +13,21 @@ const year = new Date().getFullYear();
     </div>
 
     <div class="footer-col">
-      <p class="label-eyebrow">Visit</p>
+      <p class="label-eyebrow">Где</p>
       <p>{siteConfig.address.street}</p>
-      <p>{siteConfig.address.postalCode} - {siteConfig.address.country}</p>
-      <p>{siteConfig.phone}</p>
-      <p><a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a></p>
+      <p>{siteConfig.address.locality}, {siteConfig.address.country}</p>
+      <p>Адрес и телефон не указаны</p>
     </div>
 
     <div class="footer-col">
-      <p class="label-eyebrow">Hours</p>
+      <p class="label-eyebrow">Часы</p>
       <p>{siteConfig.hours.serviceDays}</p>
       <p>{siteConfig.hours.seatings}</p>
-      <p>Closed {siteConfig.hours.closed}</p>
+      <p>Выходные: {siteConfig.hours.closed}</p>
     </div>
 
     <div class="footer-col">
-      <p class="label-eyebrow">Elsewhere</p>
+      <p class="label-eyebrow">Демо</p>
       <ul>
         {siteConfig.social.map((item) => (
           <li><a href={item.href} target="_blank" rel="noreferrer">{item.label}</a></li>
@@ -37,7 +36,7 @@ const year = new Date().getFullYear();
     </div>
 
     <div class="footer-bottom">
-      <p>&copy; {year} {siteConfig.name}. All rights reserved.</p>
+      <p>&copy; {year} Демо MicroStudio на основе темы <a href="https://github.com/xocothemes/ombra">Ombra</a> — Andrei Alba, MIT.</p>
       <p><span class="ember-dot" aria-hidden="true"></span> {homeContent.footer.signal}</p>
     </div>
   </div>
